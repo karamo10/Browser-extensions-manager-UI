@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- Header Section -->
+      <section class="header">
+        <div class="logo">
+          <img src="/assets/images/logo.svg" alt="">
+        </div>
+        <div class="theme-mode"></div>
+      </section>
+    </div>
+
+    <div class="container">
+      <!-- Subheading Section -->
+      <section class="subheading">
+        <h1 class="subheading__title">
+          Extensions List
+        </h1>
+        <div class="subheading__links">
+          <button class="subheading__link subheading__link-active" data-filter="all">All</button>
+          <button class="subheading__link" data-filter="active">Active</button>
+          <button class="subheading__link" data-filter="inactive">Inactive</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <!-- Extension Section -->
+      <section class="extensions">
+        <!-- Extention 1 -->
+        <div class="extention" data-status="active">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-devlens.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">DevLens</h2>
+              <p class="details-paragraph">Quickly inspect page layouts and visualize element boundaries.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch" >
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 2 -->
+        <div class="extention" data-status="active">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-style-spy.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">StyleSpy</h2>
+              <p class="details-paragraph">StyleSpy Instantly analyze and copy CSS from any webpage element.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch">
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 3 -->
+        <div class="extention" data-status="inactive">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-speed-boost.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">SpeedBoost</h2>
+              <p class="details-paragraph">Optimizes browser resource usage to accelerate page loading.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch" >
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider slider-inactive"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 4 -->
+        <div class="extention" data-status="active">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-json-wizard.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">JSONWizard</h2>
+              <p class="details-paragraph">Formats, validates, and prettifies JSON responses in-browser.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch">
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 5 -->
+        <div class="extention" data-status="active">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-tab-master-pro.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">TabMaster</h2>
+              <p class="details-paragraph">Pro Organizes browser tabs into groups and sessions</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch" >
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 6 -->
+        <div class="extention" data-status="inactive">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-viewport-buddy.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">ViewportBuddy</h2>
+              <p class="details-paragraph">Simulates various screen resolutions directly within the browser.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch">
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider slider-inactive"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 7 -->
+        <div class="extention" data-status="active">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-markup-notes.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">Markup Notes</h2>
+              <p class="details-paragraph">Enables annotation and note directly onto webpages for collaborative debugging</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch" >
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 8 -->
+        <div class="extention" data-status="inactives">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-grid-guides.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">GridGuides</h2>
+              <p class="details-paragraph">Overlay customizable grids and alignment guides on any webpage.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch">
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider slider-inactive"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 9 -->
+        <div class="extention" data-status="active">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-palette-picker.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">Palette Picker</h2>
+              <p class="details-paragraph">Instantly extracts color palettes from any webpage.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch">
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 10 -->
+        <div class="extention" data-status="active">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-link-checker.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">LinkChecker</h2>
+              <p class="details-paragraph">Scans and highlights broken links on any page.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch">
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 11 -->
+        <div class="extention" data-status="inactive">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-dom-snapshot.svg" alt="Devlens Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">DOM Snapshot</h2>
+              <p class="details-paragraph">Capture and export DOM structures quickly.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch">
+              <label >
+                <input type="checkbox" id="toggle"><span class="slider slider-inactive"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Extention 12 -->
+        <div class="extention" data-status="active">
+          <div class="extention__info">
+            <!--  -->
+            <div class="extention__info-logo">
+              <img src="/assets/images/logo-console-plus.svg" alt="console-plus Svg">
+            </div>
+            <!--  -->
+            <div class="extention__info-details">
+              <h2 class="details-heading">ConsolePlus</h2>
+              <p class="details-paragraph">Enhanced developer console with advanced filtering and logging.</p>
+            </div>
+          </div>
+          <div class="extension__bottom">
+            <button class="btn-remove">Remove</button>
+            <div class="switch">
+              <label>
+                <input type="checkbox" id="toggle"><span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://instagram.com/dev.camz/">Pabicamz</a>.
+  </div>
+  <script src="assets/script/script.js"></script>
+  </body>
+</html>
